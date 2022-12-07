@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #202020;
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    color: #d6d6d6;
+}
+
+#canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainCanvasContainer {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.stepsControl {
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.border {
+    width: 50%;
+    height: 1px;
+    background-color: #d6d6d6;
+    margin: 10px auto;
+}
+
+button {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    outline: none;
+    height: 40px;
+    width: 100px;
+}
